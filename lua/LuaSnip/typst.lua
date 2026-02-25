@@ -472,6 +472,9 @@ supplement: <>,
     s({ trig = "@g", snippetType = "autosnippet" }, t("nabla"), { condition = in_mathzone }),
     s({ trig = "@p", snippetType = "autosnippet" }, t("partial"), { condition = in_mathzone }),
     s({ trig = "@c", snippetType = "autosnippet" }, t("compose"), { condition = in_mathzone }),
+    s({ trig = "ang", snippetType = "autosnippet" }, t("angle"), { condition = in_mathzone }),
+    s({ trig = "tri", snippetType = "autosnippet" }, t("triangle"), { condition = in_mathzone }),
+
     s(
         { trig = "dxdy", snippetType = "autosnippet" },
         fmta([[frac((d <>,d <>)<>]], {
@@ -531,30 +534,30 @@ supplement: <>,
         { condition = in_mathzone }
     ),
     -- TODO: Really hink about if you want these vvv
-    s(
-        { trig = "(", wordTrig = false, desc = "Autopairs", snippetType = "autosnippet" },
-        fmta("(<>)<>", {
-            iv(1),
-            i(0),
-        }),
-        { condition = -in_textzone * (in_mathzone + in_codezone) }
-    ),
-    s(
-        { trig = "{", desc = "Autopairs", snippetType = "autosnippet" },
-        fmta("{<>}<>", {
-            iv(1),
-            i(0),
-        }),
-        { condition = in_mathzone + in_codezone }
-    ),
-    s(
-        { trig = "[", wordTrig = false, desc = "Autopairs", snippetType = "autosnippet" },
-        fmta("[<>]<>", {
-            iv(1),
-            i(0),
-        }),
-        { condition = in_mathzone + in_codezone }
-    ),
+    -- s(
+    --     { trig = "(", wordTrig = false, desc = "Autopairs", snippetType = "autosnippet" },
+    --     fmta("(<>)<>", {
+    --         iv(1),
+    --         i(0),
+    --     }),
+    --     { condition = -in_textzone * (in_mathzone + in_codezone) }
+    -- ),
+    -- s(
+    --     { trig = "{", desc = "Autopairs", snippetType = "autosnippet" },
+    --     fmta("{<>}<>", {
+    --         iv(1),
+    --         i(0),
+    --     }),
+    --     { condition = in_mathzone + in_codezone }
+    -- ),
+    -- s(
+    --     { trig = "[", wordTrig = false, desc = "Autopairs", snippetType = "autosnippet" },
+    --     fmta("[<>]<>", {
+    --         iv(1),
+    --         i(0),
+    --     }),
+    --     { condition = in_mathzone + in_codezone }
+    -- ),
     -- TODO: Really hink about if you want these ^^^
     s(
         { trig = [["]], wordTrig = false, snippetType = "autosnippet" },
