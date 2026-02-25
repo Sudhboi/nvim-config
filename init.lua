@@ -57,9 +57,3 @@ au BufReadPre *.lagda* call CornelisLoadWrapper()
 
 au BufWritePost *.agda execute "normal! :CornelisLoad\<CR>"
 ]])
-
-require 'nvim-treesitter.config'.setup {
-    indent = {
-        enable = true
-    },
-}
