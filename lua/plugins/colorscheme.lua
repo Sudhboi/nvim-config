@@ -12,11 +12,11 @@ return {
     {
         "catppuccin/nvim",
         opts = {
-            -- float = {
-            --     transparent = true,
-            -- },
-            -- transparent_background = true,
-            flavour = "latte",
+            float = {
+                transparent = true,
+            },
+            transparent_background = true,
+            flavour = "mocha",
         },
     },
 }
