@@ -603,6 +603,14 @@ supplement: <>,
         }),
         { condition = in_mathzone * trigger_does_not_follow_alpha_char }
     ),
+    s(
+        { trig = "lk", wordTrig = false, snippetType = "autosnippet" },
+        fmta([[(<>)<>]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone }
+    ),
     --- BAR
     --   TODO: Which is faster? These two? or the dynamic node one?
     --- Enter display mode quickly
@@ -1086,4 +1094,19 @@ plot.plot(size: (5, 5), {
         ),
         { condition = -in_mathzone }
     ),
+    s(
+        {
+            trig = "add_theme",
+            name = "Catppuccin",
+            desc = "A snippet to add theme",
+        },
+        fmta(
+            [[
+#import "@preview/catppuccin:1.1.0": catppuccin, flavors
+#show: catppuccin.with(flavors.<>)
+)]],
+            { i(1) }
+        ),
+        { condition = -in_mathzone }
+    )
 }

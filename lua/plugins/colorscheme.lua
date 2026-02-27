@@ -1,21 +1,22 @@
 return {
-  -- add gruvbox
-  { "catppuccin/nvim" },
+    -- add gruvbox
+    { "catppuccin/nvim" },
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
+    -- Configure LazyVim to load gruvbox
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "catppuccin",
+        },
     },
-  },
-  {
-    "catppuccin/nvim",
-    opts = {
-      float = {
-        transparent = true,
-      },
-      transparent_background = true,
+    {
+        "catppuccin/nvim",
+        opts = {
+            -- float = {
+            --     transparent = true,
+            -- },
+            -- transparent_background = true,
+            flavour = "latte",
+        },
     },
-  },
 }
