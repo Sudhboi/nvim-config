@@ -611,6 +611,38 @@ supplement: <>,
         }),
         { condition = in_mathzone }
     ),
+    s(
+        { trig = "ray", wordTrig = true, snippetType = "autosnippet" },
+        fmta([[arrow(<>)<>]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone * trigger_does_not_follow_alpha_char }
+    ),
+    s(
+        { trig = "seg", wordTrig = true, snippetType = "autosnippet" },
+        fmta([[overline(<>)<>]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone * trigger_does_not_follow_alpha_char }
+    ),
+    s(
+        { trig = "line", wordTrig = true, snippetType = "autosnippet" },
+        fmt([[accent({}, <->){}]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone * trigger_does_not_follow_alpha_char }
+    ),
+    s(
+        { trig = "mes", wordTrig = true, snippetType = "autosnippet" },
+        fmt([[mu (angle {}){}]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone * trigger_does_not_follow_alpha_char }
+    ),
     --- BAR
     --   TODO: Which is faster? These two? or the dynamic node one?
     --- Enter display mode quickly
