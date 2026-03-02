@@ -1136,7 +1136,23 @@ plot.plot(size: (5, 5), {
             [[
 #import "@preview/catppuccin:1.1.0": catppuccin, flavors
 #show: catppuccin.with(flavors.<>)
-)]],
+]],
+            { i(1) }
+        ),
+        { condition = -in_mathzone }
+    ),
+    s(
+        {
+            trig = "proof_env",
+        },
+        fmta(
+            [[
+_Proof:_
+
+<>
+
+#align(right, $qed$)
+]],
             { i(1) }
         ),
         { condition = -in_mathzone }
