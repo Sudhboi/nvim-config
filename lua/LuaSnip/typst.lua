@@ -612,6 +612,14 @@ supplement: <>,
         { condition = in_mathzone }
     ),
     s(
+        { trig = "<>", wordTrig = false, snippetType = "autosnippet" },
+        fmta([[chevron.l <> chevron.r<>]], {
+            i(1),
+            i(0)
+        }),
+        { condition = in_mathzone }
+    ),
+    s(
         { trig = "ray", wordTrig = true, snippetType = "autosnippet" },
         fmta([[arrow(<>)<>]], {
             i(1),
