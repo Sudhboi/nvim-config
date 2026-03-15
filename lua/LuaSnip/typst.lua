@@ -472,8 +472,9 @@ supplement: <>,
     s({ trig = "@g", snippetType = "autosnippet" }, t("nabla"), { condition = in_mathzone }),
     s({ trig = "@p", snippetType = "autosnippet" }, t("partial"), { condition = in_mathzone }),
     s({ trig = "@c", snippetType = "autosnippet" }, t("compose"), { condition = in_mathzone }),
-    s({ trig = "ang", snippetType = "autosnippet" }, t("angle"), { condition = in_mathzone }),
-    s({ trig = "tri", snippetType = "autosnippet" }, t("triangle"), { condition = in_mathzone }),
+    s({ trig = "ang", snippetType = "autosnippet" }, t("∠"), { condition = in_mathzone }),
+    s({ trig = "tri", snippetType = "autosnippet" }, t("△"), { condition = in_mathzone }),
+    s({ trig = "sqa", snippetType = "autosnippet" }, t("square"), { condition = in_mathzone }),
 
     s(
         { trig = "dxdy", snippetType = "autosnippet" },
