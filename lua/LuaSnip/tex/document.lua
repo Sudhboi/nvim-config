@@ -73,12 +73,13 @@ return {
     ),
     s(
         { trig = "import_minted" },
-        t(
+        fmta(
             [[
 \usepackage{minted2}
 \renewcommand\MintedPygmentize{/home/sudhirk/LaTypst/LaTeX/.direnv/python-3.13/bin/pygmentize}
 \usemintedstyle{catppuccin-mocha}
-    ]]
+<>
+    ]], { i(0) }
         )
     ),
 }
