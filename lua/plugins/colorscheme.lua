@@ -6,7 +6,7 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "catppuccin",
+            colorscheme = "catppuccin-nvim",
         },
     },
     {
@@ -16,7 +16,7 @@ return {
                 transparent = true,
             },
             transparent_background = true,
-            flavour = "mocha",
+            flavour = "macchiato",
         },
     },
 }
