@@ -16,7 +16,7 @@ return {
                 transparent = true,
             },
             transparent_background = true,
-            flavour = "macchiato",
+            flavour = "mocha",
         },
     },
 }
